@@ -1,5 +1,9 @@
 const {Client, GatewayIntentBits, Partials, Collection, EmbedBuilder, MessageEmbed, ButtonBuilder, Events, ActionRowBuilder,ButtonStyle} = require('discord.js');
 const fs = require('fs');
+const sqlite3 = require('sqlite3').verbose(); // sqlite3 modülünü ekleyin
+const { SlashCommandBuilder } = require('discord.js');
+const path = require('path');
+
 
 
 
@@ -58,7 +62,7 @@ client.on('guildCreate', guild => {
         const embed = new MessageEmbed()
             .setColor('#e01444')
             .setTitle('Merhaba!')
-            .setDescription("Beni sunucuna eklediğin için teşekkürler!\n'/' ön ekini kullanarak ile komutları çağırabilirsin.\n\nHerhangi bir kanala '/help' yazarak beni kullanmaya başlayabilirsin");
+            .setDescription("Beni sunucuna eklediğin için teşekkürler!\n'/' ön ekini kullanarak ile komutları çağırabilirsin.\n\nHerhangi bir kanala yazarak beni kullanmaya başlayabilirsin");
         defaultChannel.send({ embeds: [embed] });
     }
 });

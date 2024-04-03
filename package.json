@@ -14,8 +14,8 @@
     "discord-rpc": "^4.0.1",
     "discord.js": "^14.14.1",
     "fs": "^0.0.1-security",
-    "mongodb": "^6.5.0",
-    "mongoose": "^8.2.4",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   }
 }
